@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r backend/requirements.txt
+      - run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r backend/requirements.txt
       - run: python -m pytest -q
         working-directory: backend
       - run: python -m pytest -q
@@ -49,7 +49,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: pip install -r backend/requirements.txt
+      - run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r backend/requirements.txt
       - run: npm ci
         working-directory: frontend
       - run: npx playwright install --with-deps chromium

@@ -4,6 +4,8 @@ A document workspace for research papers, technical documentation, reports, and 
 
 ![DocuMind workspace](docs/workspace.png)
 
+[Watch the recorded local demo](docs/demo.webm) · [Welcome screen](docs/welcome.png) · [Evaluation screen](docs/evaluation.png)
+
 ## What works
 
 - React, TypeScript, Vite, and Tailwind interface with private workspaces and responsive layouts.
@@ -124,4 +126,5 @@ OCR, optional reranking, S3, streamed answers, durable ingestion queues, and acc
 
 Keep this version bound to localhost. Before public deployment, add rate limits and storage quotas, use HTTPS and Secure cookies, disable guest registration, and configure backups. Upload text is sent to the generation provider only when a provider key is configured. Never commit keys, sessions, uploads, or model caches.
 
-[Deployment guide](docs/deployment.md). A live public URL and narrated demonstration video are not yet available; the repository includes a real browser screenshot and reproducible local demonstration.
+[Deployment guide](docs/deployment.md). A live public URL is not yet available. The repository includes a real browser recording, screenshots, and reproducible local demonstration; the recording has no narration.
+

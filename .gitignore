@@ -12,3 +12,4 @@ documind-benchmark-*/
 test-results/
 playwright-report/
 .tools/
+recordings/
