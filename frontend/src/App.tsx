@@ -665,11 +665,18 @@ export default function App() {
           >
             Open cited PDF page <ArrowUpRight size={14} />
           </a>
-          <iframe
-            title={`PDF page ${source.page}`}
-            src={`/api/documents/${source.document_id}/pdf#page=${source.page}`}
-            className="pdf-preview"
-          />
+          <a
+            href={`/api/documents/${source.document_id}/pages/${source.page}?chunk_id=${source.id}`}
+            target="_blank"
+            rel="noreferrer"
+            title="View rendered page at full size"
+          >
+            <img
+              alt={`Cited PDF page ${source.page} with highlighted evidence`}
+              src={`/api/documents/${source.document_id}/pages/${source.page}?chunk_id=${source.id}`}
+              className="pdf-preview"
+            />
+          </a>
           <blockquote>{source.text}</blockquote>
           <p className="source-foot">
             Retrieved passage · similarity {source.similarity.toFixed(3)}. Check

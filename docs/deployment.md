@@ -6,4 +6,5 @@ For public hosting, deploy the frontend nginx container and FastAPI container be
 
 Public hosting still needs request throttling, per-account storage limits, queued ingestion, operational backups, restore testing, and account recovery. This version's migration is idempotent initial schema setup, not a general schema-upgrade framework. Existing Folio tables/data are retained and are not imported into DocuMind's ownership model.
 
-The current machine has no Docker executable. Docker and PostgreSQL integration are exercised by the repository's CI configuration when GitHub Actions runs. A public live deployment requires a hosting account/project; the local browser preview is not a public URL.
+The current machine has no Docker executable. PostgreSQL integration and browser checks passed in GitHub Actions. The Docker image configuration has not been built on this machine. A public live deployment requires a hosting account/project; the local browser preview is not a public URL.
+

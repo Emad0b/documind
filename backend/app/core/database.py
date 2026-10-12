@@ -43,3 +43,19 @@ def initialize():
         for statement in migration.read_text().split(";"):
             if statement.strip():
                 conn.execute(statement)
+        # Small, additive upgrade for existing local previews; no uploaded data is removed.
+        columns = (
+            [
+                r[0]
+                for r in conn.execute(
+                    "SELECT column_name FROM information_schema.columns WHERE table_schema='public' AND table_name='dm_messages'"
+                ).fetchall()
+            ]
+            if PG
+            else [r[1] for r in conn.execute("PRAGMA table_info(messages)").fetchall()]
+        )
+        if "ordinal" not in columns:
+            sql(
+                conn,
+                "ALTER TABLE messages ADD COLUMN ordinal INTEGER NOT NULL DEFAULT 0",
+            )

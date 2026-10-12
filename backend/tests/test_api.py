@@ -35,6 +35,10 @@ def test_upload_retrieval_evaluation_history_and_isolation():
         assert bob.get("/api/documents").json() == []
         assert bob.get(f"/api/documents/{did}/pdf").status_code == 404
         assert bob.get(f"/api/documents/{did}/chunks").status_code == 404
+        assert bob.get(f"/api/documents/{did}/pages/1").status_code == 404
+        rendered = alice.get(f"/api/documents/{did}/pages/1")
+        assert rendered.status_code == 200 and rendered.content.startswith(b"\x89PNG")
+        assert alice.get(f"/api/documents/{did}/pages/99").status_code == 404
         assert bob.delete(f"/api/documents/{did}").status_code == 404
         body = {
             "question": "How much solar electricity was generated?",
@@ -45,7 +49,10 @@ def test_upload_retrieval_evaluation_history_and_isolation():
         assert result["sources"][0]["page"] == 1
         assert "42 units" in result["answer"]
         cid = result["conversation_id"]
-        assert len(alice.get("/api/conversations/" + cid).json()) == 2
+        assert [m["role"] for m in alice.get("/api/conversations/" + cid).json()] == [
+            "user",
+            "assistant",
+        ]
         assert bob.get("/api/conversations/" + cid).status_code == 404
         assert (
             alice.get(f"/api/documents/{did}/pdf").headers["content-type"]

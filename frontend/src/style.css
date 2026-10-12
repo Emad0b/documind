@@ -1000,3 +1000,41 @@ h1 em {
     width: min(370px, 100vw);
   }
 }
+.pdf-preview {
+  object-fit: contain;
+  cursor: zoom-in;
+}
+.sidebar {
+  overflow-y: auto;
+}
+.documents {
+  min-height: 75px;
+}
+.sidebar-footer {
+  flex-shrink: 0;
+}
+@media (max-height: 850px) {
+  .sidebar {
+    padding-top: 20px;
+  }
+  .workspace {
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
+  .section-label {
+    margin-top: 20px;
+  }
+  .upload-card {
+    padding: 11px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .sidebar-footer {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .history-list {
+    max-height: 100px;
+    overflow-y: auto;
+  }
+}

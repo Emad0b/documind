@@ -44,6 +44,15 @@ test("upload, cited answer, saved history, evaluation, and mobile layout", async
     timeout: 30000,
   });
   await page.locator(".sources button").first().click();
+  await expect
+    .poll(() =>
+      page
+        .locator(".pdf-preview")
+        .evaluate(
+          (img: HTMLImageElement) => img.complete && img.naturalWidth > 0,
+        ),
+    )
+    .toBe(true);
   await expect(
     page.getByRole("link", { name: "Open cited PDF page" }),
   ).toHaveAttribute("href", /\/pdf#page=1$/);

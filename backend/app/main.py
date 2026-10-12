@@ -265,6 +265,41 @@ def pdf(did: str, owner=Depends(current_user)):
     )
 
 
+@app.get("/api/documents/{did}/pages/{page}")
+def render_page(
+    did: str, page: int, chunk_id: str | None = None, owner=Depends(current_user)
+):
+    import pymupdf
+
+    authorize_documents(owner, [did])
+    path = config.FILES / (did + ".pdf")
+    if not path.is_file():
+        raise HTTPException(404, "Stored PDF missing")
+    with pymupdf.open(path) as document:
+        if not 1 <= page <= len(document):
+            raise HTTPException(404, "Page not found")
+        source_page = document[page - 1]
+        if chunk_id:
+            with db() as conn:
+                row = sql(
+                    conn,
+                    "SELECT text FROM chunks WHERE id=? AND doc=? AND page=?",
+                    (chunk_id, did, page),
+                ).fetchone()
+            if not row:
+                raise HTTPException(404, "Passage not found on this page")
+            rectangles = source_page.search_for(row[0][:160])
+            if rectangles:
+                source_page.add_highlight_annot(rectangles)
+        scale = min(2, 1800 / max(source_page.rect.width, source_page.rect.height))
+        image = source_page.get_pixmap(
+            matrix=pymupdf.Matrix(scale, scale), alpha=False
+        ).tobytes("png")
+    return Response(
+        image, media_type="image/png", headers={"Cache-Control": "private, no-store"}
+    )
+
+
 @app.get("/api/documents/{did}/chunks")
 def chunks(did: str, owner=Depends(current_user)):
     authorize_documents(owner, [did])
@@ -320,7 +355,7 @@ def history(cid: str, owner=Depends(current_user)):
             raise HTTPException(404, "Conversation not found")
         rows = sql(
             conn,
-            "SELECT role,payload FROM messages WHERE conversation=? ORDER BY created,id",
+            "SELECT role,payload FROM messages WHERE conversation=? ORDER BY ordinal,created,CASE WHEN role='user' THEN 0 ELSE 1 END,id",
             (cid,),
         ).fetchall()
     return [dict(role=r[0], **json.loads(r[1])) for r in rows]
@@ -373,21 +408,40 @@ async def ask(req: Question, owner=Depends(current_user)):
                 "INSERT INTO conversations VALUES (?,?,?,?)",
                 (cid, owner, req.question[:70], time.time()),
             )
+        # Acquire the conversation row's write lock before assigning message positions.
         sql(
             conn,
-            "INSERT INTO messages VALUES (?,?,?,?,?)",
+            "UPDATE conversations SET title=title WHERE id=? AND owner=?",
+            (cid, owner),
+        )
+        ordinal = sql(
+            conn,
+            "SELECT COALESCE(MAX(ordinal),0) FROM messages WHERE conversation=?",
+            (cid,),
+        ).fetchone()[0]
+        sql(
+            conn,
+            "INSERT INTO messages VALUES (?,?,?,?,?,?)",
             (
                 str(uuid.uuid4()),
                 cid,
                 "user",
                 json.dumps({"text": req.question}),
                 time.time(),
+                ordinal + 1,
             ),
         )
         sql(
             conn,
-            "INSERT INTO messages VALUES (?,?,?,?,?)",
-            (str(uuid.uuid4()), cid, "assistant", json.dumps(result), time.time()),
+            "INSERT INTO messages VALUES (?,?,?,?,?,?)",
+            (
+                str(uuid.uuid4()),
+                cid,
+                "assistant",
+                json.dumps(result),
+                time.time(),
+                ordinal + 2,
+            ),
         )
         sql(
             conn,
