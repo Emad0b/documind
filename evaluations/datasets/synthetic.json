@@ -1,0 +1,1096 @@
+{
+  "description": "74 self-authored synthetic cases: 64 factual, 8 unrelated, 1 comparison, 1 ambiguous. Smoke benchmark, not real-paper validation.",
+  "documents": [
+    {
+      "name": "Cedar",
+      "pages": [
+        "Cedar Experiment Report. Section: training cost.\nThe training cost for the Cedar experiment was 101 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: batch size.\nThe batch size for the Cedar experiment was 102 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: GPU count.\nThe GPU count for the Cedar experiment was 103 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: training duration.\nThe training duration for the Cedar experiment was 104 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: parameter count.\nThe parameter count for the Cedar experiment was 105 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: dataset size.\nThe dataset size for the Cedar experiment was 106 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: learning rate.\nThe learning rate for the Cedar experiment was 107 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: context length.\nThe context length for the Cedar experiment was 108 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: energy use.\nThe energy use for the Cedar experiment was 109 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: memory use.\nThe memory use for the Cedar experiment was 110 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: evaluation score.\nThe evaluation score for the Cedar experiment was 111 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: inference latency.\nThe inference latency for the Cedar experiment was 112 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: checkpoint count.\nThe checkpoint count for the Cedar experiment was 113 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: warmup steps.\nThe warmup steps for the Cedar experiment was 114 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: dropout rate.\nThe dropout rate for the Cedar experiment was 115 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Cedar Experiment Report. Section: carbon footprint.\nThe carbon footprint for the Cedar experiment was 116 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result."
+      ]
+    },
+    {
+      "name": "Maple",
+      "pages": [
+        "Maple Experiment Report. Section: training cost.\nThe training cost for the Maple experiment was 201 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: batch size.\nThe batch size for the Maple experiment was 202 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: GPU count.\nThe GPU count for the Maple experiment was 203 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: training duration.\nThe training duration for the Maple experiment was 204 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: parameter count.\nThe parameter count for the Maple experiment was 205 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: dataset size.\nThe dataset size for the Maple experiment was 206 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: learning rate.\nThe learning rate for the Maple experiment was 207 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: context length.\nThe context length for the Maple experiment was 208 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: energy use.\nThe energy use for the Maple experiment was 209 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: memory use.\nThe memory use for the Maple experiment was 210 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: evaluation score.\nThe evaluation score for the Maple experiment was 211 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: inference latency.\nThe inference latency for the Maple experiment was 212 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: checkpoint count.\nThe checkpoint count for the Maple experiment was 213 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: warmup steps.\nThe warmup steps for the Maple experiment was 214 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: dropout rate.\nThe dropout rate for the Maple experiment was 215 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Maple Experiment Report. Section: carbon footprint.\nThe carbon footprint for the Maple experiment was 216 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result."
+      ]
+    },
+    {
+      "name": "Willow",
+      "pages": [
+        "Willow Experiment Report. Section: training cost.\nThe training cost for the Willow experiment was 301 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: batch size.\nThe batch size for the Willow experiment was 302 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: GPU count.\nThe GPU count for the Willow experiment was 303 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: training duration.\nThe training duration for the Willow experiment was 304 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: parameter count.\nThe parameter count for the Willow experiment was 305 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: dataset size.\nThe dataset size for the Willow experiment was 306 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: learning rate.\nThe learning rate for the Willow experiment was 307 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: context length.\nThe context length for the Willow experiment was 308 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: energy use.\nThe energy use for the Willow experiment was 309 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: memory use.\nThe memory use for the Willow experiment was 310 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: evaluation score.\nThe evaluation score for the Willow experiment was 311 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: inference latency.\nThe inference latency for the Willow experiment was 312 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: checkpoint count.\nThe checkpoint count for the Willow experiment was 313 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: warmup steps.\nThe warmup steps for the Willow experiment was 314 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: dropout rate.\nThe dropout rate for the Willow experiment was 315 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Willow Experiment Report. Section: carbon footprint.\nThe carbon footprint for the Willow experiment was 316 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result."
+      ]
+    },
+    {
+      "name": "Birch",
+      "pages": [
+        "Birch Experiment Report. Section: training cost.\nThe training cost for the Birch experiment was 401 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: batch size.\nThe batch size for the Birch experiment was 402 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: GPU count.\nThe GPU count for the Birch experiment was 403 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: training duration.\nThe training duration for the Birch experiment was 404 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: parameter count.\nThe parameter count for the Birch experiment was 405 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: dataset size.\nThe dataset size for the Birch experiment was 406 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: learning rate.\nThe learning rate for the Birch experiment was 407 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: context length.\nThe context length for the Birch experiment was 408 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: energy use.\nThe energy use for the Birch experiment was 409 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: memory use.\nThe memory use for the Birch experiment was 410 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: evaluation score.\nThe evaluation score for the Birch experiment was 411 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: inference latency.\nThe inference latency for the Birch experiment was 412 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: checkpoint count.\nThe checkpoint count for the Birch experiment was 413 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: warmup steps.\nThe warmup steps for the Birch experiment was 414 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: dropout rate.\nThe dropout rate for the Birch experiment was 415 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result.",
+        "Birch Experiment Report. Section: carbon footprint.\nThe carbon footprint for the Birch experiment was 416 benchmark units.\nThis is a fictional self-authored benchmark, not an actual research result."
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "question": "What training cost did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 1
+        }
+      ],
+      "reference_answer": "101",
+      "category": "factual"
+    },
+    {
+      "question": "What batch size did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 2
+        }
+      ],
+      "reference_answer": "102",
+      "category": "factual"
+    },
+    {
+      "question": "What GPU count did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 3
+        }
+      ],
+      "reference_answer": "103",
+      "category": "factual"
+    },
+    {
+      "question": "What training duration did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 4
+        }
+      ],
+      "reference_answer": "104",
+      "category": "factual"
+    },
+    {
+      "question": "What parameter count did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 5
+        }
+      ],
+      "reference_answer": "105",
+      "category": "factual"
+    },
+    {
+      "question": "What dataset size did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 6
+        }
+      ],
+      "reference_answer": "106",
+      "category": "factual"
+    },
+    {
+      "question": "What learning rate did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 7
+        }
+      ],
+      "reference_answer": "107",
+      "category": "factual"
+    },
+    {
+      "question": "What context length did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 8
+        }
+      ],
+      "reference_answer": "108",
+      "category": "factual"
+    },
+    {
+      "question": "What energy use did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 9
+        }
+      ],
+      "reference_answer": "109",
+      "category": "factual"
+    },
+    {
+      "question": "What memory use did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 10
+        }
+      ],
+      "reference_answer": "110",
+      "category": "factual"
+    },
+    {
+      "question": "What evaluation score did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 11
+        }
+      ],
+      "reference_answer": "111",
+      "category": "factual"
+    },
+    {
+      "question": "What inference latency did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 12
+        }
+      ],
+      "reference_answer": "112",
+      "category": "factual"
+    },
+    {
+      "question": "What checkpoint count did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 13
+        }
+      ],
+      "reference_answer": "113",
+      "category": "factual"
+    },
+    {
+      "question": "What warmup steps did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 14
+        }
+      ],
+      "reference_answer": "114",
+      "category": "factual"
+    },
+    {
+      "question": "What dropout rate did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 15
+        }
+      ],
+      "reference_answer": "115",
+      "category": "factual"
+    },
+    {
+      "question": "What carbon footprint did the Cedar experiment report?",
+      "documents": [
+        "Cedar"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 16
+        }
+      ],
+      "reference_answer": "116",
+      "category": "factual"
+    },
+    {
+      "question": "What training cost did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 1
+        }
+      ],
+      "reference_answer": "201",
+      "category": "factual"
+    },
+    {
+      "question": "What batch size did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 2
+        }
+      ],
+      "reference_answer": "202",
+      "category": "factual"
+    },
+    {
+      "question": "What GPU count did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 3
+        }
+      ],
+      "reference_answer": "203",
+      "category": "factual"
+    },
+    {
+      "question": "What training duration did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 4
+        }
+      ],
+      "reference_answer": "204",
+      "category": "factual"
+    },
+    {
+      "question": "What parameter count did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 5
+        }
+      ],
+      "reference_answer": "205",
+      "category": "factual"
+    },
+    {
+      "question": "What dataset size did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 6
+        }
+      ],
+      "reference_answer": "206",
+      "category": "factual"
+    },
+    {
+      "question": "What learning rate did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 7
+        }
+      ],
+      "reference_answer": "207",
+      "category": "factual"
+    },
+    {
+      "question": "What context length did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 8
+        }
+      ],
+      "reference_answer": "208",
+      "category": "factual"
+    },
+    {
+      "question": "What energy use did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 9
+        }
+      ],
+      "reference_answer": "209",
+      "category": "factual"
+    },
+    {
+      "question": "What memory use did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 10
+        }
+      ],
+      "reference_answer": "210",
+      "category": "factual"
+    },
+    {
+      "question": "What evaluation score did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 11
+        }
+      ],
+      "reference_answer": "211",
+      "category": "factual"
+    },
+    {
+      "question": "What inference latency did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 12
+        }
+      ],
+      "reference_answer": "212",
+      "category": "factual"
+    },
+    {
+      "question": "What checkpoint count did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 13
+        }
+      ],
+      "reference_answer": "213",
+      "category": "factual"
+    },
+    {
+      "question": "What warmup steps did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 14
+        }
+      ],
+      "reference_answer": "214",
+      "category": "factual"
+    },
+    {
+      "question": "What dropout rate did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 15
+        }
+      ],
+      "reference_answer": "215",
+      "category": "factual"
+    },
+    {
+      "question": "What carbon footprint did the Maple experiment report?",
+      "documents": [
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Maple",
+          "page": 16
+        }
+      ],
+      "reference_answer": "216",
+      "category": "factual"
+    },
+    {
+      "question": "What training cost did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 1
+        }
+      ],
+      "reference_answer": "301",
+      "category": "factual"
+    },
+    {
+      "question": "What batch size did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 2
+        }
+      ],
+      "reference_answer": "302",
+      "category": "factual"
+    },
+    {
+      "question": "What GPU count did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 3
+        }
+      ],
+      "reference_answer": "303",
+      "category": "factual"
+    },
+    {
+      "question": "What training duration did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 4
+        }
+      ],
+      "reference_answer": "304",
+      "category": "factual"
+    },
+    {
+      "question": "What parameter count did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 5
+        }
+      ],
+      "reference_answer": "305",
+      "category": "factual"
+    },
+    {
+      "question": "What dataset size did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 6
+        }
+      ],
+      "reference_answer": "306",
+      "category": "factual"
+    },
+    {
+      "question": "What learning rate did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 7
+        }
+      ],
+      "reference_answer": "307",
+      "category": "factual"
+    },
+    {
+      "question": "What context length did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 8
+        }
+      ],
+      "reference_answer": "308",
+      "category": "factual"
+    },
+    {
+      "question": "What energy use did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 9
+        }
+      ],
+      "reference_answer": "309",
+      "category": "factual"
+    },
+    {
+      "question": "What memory use did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 10
+        }
+      ],
+      "reference_answer": "310",
+      "category": "factual"
+    },
+    {
+      "question": "What evaluation score did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 11
+        }
+      ],
+      "reference_answer": "311",
+      "category": "factual"
+    },
+    {
+      "question": "What inference latency did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 12
+        }
+      ],
+      "reference_answer": "312",
+      "category": "factual"
+    },
+    {
+      "question": "What checkpoint count did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 13
+        }
+      ],
+      "reference_answer": "313",
+      "category": "factual"
+    },
+    {
+      "question": "What warmup steps did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 14
+        }
+      ],
+      "reference_answer": "314",
+      "category": "factual"
+    },
+    {
+      "question": "What dropout rate did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 15
+        }
+      ],
+      "reference_answer": "315",
+      "category": "factual"
+    },
+    {
+      "question": "What carbon footprint did the Willow experiment report?",
+      "documents": [
+        "Willow"
+      ],
+      "expected": [
+        {
+          "document": "Willow",
+          "page": 16
+        }
+      ],
+      "reference_answer": "316",
+      "category": "factual"
+    },
+    {
+      "question": "What training cost did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 1
+        }
+      ],
+      "reference_answer": "401",
+      "category": "factual"
+    },
+    {
+      "question": "What batch size did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 2
+        }
+      ],
+      "reference_answer": "402",
+      "category": "factual"
+    },
+    {
+      "question": "What GPU count did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 3
+        }
+      ],
+      "reference_answer": "403",
+      "category": "factual"
+    },
+    {
+      "question": "What training duration did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 4
+        }
+      ],
+      "reference_answer": "404",
+      "category": "factual"
+    },
+    {
+      "question": "What parameter count did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 5
+        }
+      ],
+      "reference_answer": "405",
+      "category": "factual"
+    },
+    {
+      "question": "What dataset size did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 6
+        }
+      ],
+      "reference_answer": "406",
+      "category": "factual"
+    },
+    {
+      "question": "What learning rate did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 7
+        }
+      ],
+      "reference_answer": "407",
+      "category": "factual"
+    },
+    {
+      "question": "What context length did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 8
+        }
+      ],
+      "reference_answer": "408",
+      "category": "factual"
+    },
+    {
+      "question": "What energy use did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 9
+        }
+      ],
+      "reference_answer": "409",
+      "category": "factual"
+    },
+    {
+      "question": "What memory use did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 10
+        }
+      ],
+      "reference_answer": "410",
+      "category": "factual"
+    },
+    {
+      "question": "What evaluation score did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 11
+        }
+      ],
+      "reference_answer": "411",
+      "category": "factual"
+    },
+    {
+      "question": "What inference latency did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 12
+        }
+      ],
+      "reference_answer": "412",
+      "category": "factual"
+    },
+    {
+      "question": "What checkpoint count did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 13
+        }
+      ],
+      "reference_answer": "413",
+      "category": "factual"
+    },
+    {
+      "question": "What warmup steps did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 14
+        }
+      ],
+      "reference_answer": "414",
+      "category": "factual"
+    },
+    {
+      "question": "What dropout rate did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 15
+        }
+      ],
+      "reference_answer": "415",
+      "category": "factual"
+    },
+    {
+      "question": "What carbon footprint did the Birch experiment report?",
+      "documents": [
+        "Birch"
+      ],
+      "expected": [
+        {
+          "document": "Birch",
+          "page": 16
+        }
+      ],
+      "reference_answer": "416",
+      "category": "factual"
+    },
+    {
+      "question": "Who won the national football championship?",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [],
+      "reference_answer": null,
+      "category": "unanswerable"
+    },
+    {
+      "question": "What is the mayor\u2019s home address?",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [],
+      "reference_answer": null,
+      "category": "unanswerable"
+    },
+    {
+      "question": "Which restaurant has the cheapest lunch?",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [],
+      "reference_answer": null,
+      "category": "unanswerable"
+    },
+    {
+      "question": "What is tomorrow\u2019s weather forecast?",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [],
+      "reference_answer": null,
+      "category": "unanswerable"
+    },
+    {
+      "question": "Who composed the opera?",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [],
+      "reference_answer": null,
+      "category": "unanswerable"
+    },
+    {
+      "question": "What is the mountain hiking permit price?",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [],
+      "reference_answer": null,
+      "category": "unanswerable"
+    },
+    {
+      "question": "Which ocean fish lives longest?",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [],
+      "reference_answer": null,
+      "category": "unanswerable"
+    },
+    {
+      "question": "What is the train departure platform?",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [],
+      "reference_answer": null,
+      "category": "unanswerable"
+    },
+    {
+      "question": "Compare the reported training cost of Cedar and Maple.",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [
+        {
+          "document": "Cedar",
+          "page": 1
+        },
+        {
+          "document": "Maple",
+          "page": 1
+        }
+      ],
+      "reference_answer": "101 versus 201 benchmark units",
+      "category": "comparison"
+    },
+    {
+      "question": "Which experiment is better?",
+      "documents": [
+        "Cedar",
+        "Maple"
+      ],
+      "expected": [],
+      "reference_answer": null,
+      "category": "ambiguous"
+    }
+  ]
+}

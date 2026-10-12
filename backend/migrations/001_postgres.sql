@@ -1,0 +1,11 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+CREATE TABLE IF NOT EXISTS dm_users (id TEXT PRIMARY KEY, username TEXT UNIQUE, password TEXT);
+CREATE TABLE IF NOT EXISTS dm_sessions (token TEXT PRIMARY KEY, owner TEXT REFERENCES dm_users(id) ON DELETE CASCADE, expires DOUBLE PRECISION);
+CREATE TABLE IF NOT EXISTS dm_documents (id TEXT PRIMARY KEY, owner TEXT REFERENCES dm_users(id), name TEXT, pages INTEGER, digest TEXT, status TEXT, error TEXT, created DOUBLE PRECISION, UNIQUE(owner,digest));
+CREATE TABLE IF NOT EXISTS dm_chunks (id TEXT PRIMARY KEY, doc TEXT REFERENCES dm_documents(id) ON DELETE CASCADE, page INTEGER, position INTEGER, text TEXT, embedding vector(384), model TEXT, search tsvector GENERATED ALWAYS AS (to_tsvector('english',text)) STORED);
+CREATE INDEX IF NOT EXISTS dm_chunks_doc ON dm_chunks(doc);
+CREATE INDEX IF NOT EXISTS dm_chunks_search ON dm_chunks USING gin(search);
+CREATE INDEX IF NOT EXISTS dm_chunks_vector ON dm_chunks USING hnsw(embedding vector_cosine_ops);
+CREATE TABLE IF NOT EXISTS dm_conversations (id TEXT PRIMARY KEY, owner TEXT REFERENCES dm_users(id), title TEXT, created DOUBLE PRECISION);
+CREATE TABLE IF NOT EXISTS dm_messages (id TEXT PRIMARY KEY, conversation TEXT REFERENCES dm_conversations(id) ON DELETE CASCADE, role TEXT, payload TEXT, created DOUBLE PRECISION);
+CREATE TABLE IF NOT EXISTS dm_usage (id TEXT PRIMARY KEY, owner TEXT REFERENCES dm_users(id), latency DOUBLE PRECISION, input_tokens INTEGER, output_tokens INTEGER, cost DOUBLE PRECISION, created DOUBLE PRECISION);

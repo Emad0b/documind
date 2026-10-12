@@ -1,0 +1,44 @@
+services:
+  database:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: folio
+      POSTGRES_USER: folio
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-development-only}
+    volumes:
+      - database:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U folio"]
+      interval: 5s
+      retries: 10
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql://folio:${POSTGRES_PASSWORD:-local-development-only}@database:5432/folio
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4.1-mini}
+      EMBEDDING_BACKEND: sentence-transformers
+      HF_HOME: /app/data/models
+      ALLOW_GUEST: ${ALLOW_GUEST:-true}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://api.openai.com/v1}
+      SECURE_COOKIES: ${SECURE_COOKIES:-false}
+      MIN_SIMILARITY: ${MIN_SIMILARITY:-0.35}
+      CHUNK_SIZE: ${CHUNK_SIZE:-180}
+      CHUNK_OVERLAP: ${CHUNK_OVERLAP:-35}
+      RRF_K: ${RRF_K:-60}
+      INPUT_COST_PER_MILLION: ${INPUT_COST_PER_MILLION:-}
+      OUTPUT_COST_PER_MILLION: ${OUTPUT_COST_PER_MILLION:-}
+    volumes:
+      - files:/app/data
+    depends_on:
+      database:
+        condition: service_healthy
+  frontend:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:8080:80"
+    depends_on:
+      - backend
+volumes:
+  database:
+  files:

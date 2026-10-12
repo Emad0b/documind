@@ -1,0 +1,63 @@
+name: DocuMind CI
+on: [push, pull_request]
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_DB: documind
+          POSTGRES_USER: documind
+          POSTGRES_PASSWORD: ci-only-password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U documind"
+          --health-interval 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r backend/requirements.txt
+      - run: python -m pytest -q
+        working-directory: backend
+      - run: python -m pytest -q
+        working-directory: backend
+        env:
+          TEST_DATABASE_URL: postgresql://documind:ci-only-password@localhost:5432/documind
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+        working-directory: frontend
+      - run: npm run build
+        working-directory: frontend
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r backend/requirements.txt
+      - run: npm ci
+        working-directory: frontend
+      - run: npx playwright install --with-deps chromium
+        working-directory: frontend
+      - run: |
+          cd backend
+          EMBEDDING_BACKEND=lexical uvicorn app.main:app --host 127.0.0.1 --port 8000 > /tmp/documind-api.log 2>&1 &
+          cd ../frontend
+          npm run dev -- --port 5174 > /tmp/documind-web.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:5174/ && break; sleep 1; done
+          npm run test:e2e

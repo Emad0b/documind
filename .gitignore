@@ -1,0 +1,14 @@
+.env
+node_modules/
+dist/
+__pycache__/
+.venv/
+data/
+.deps/
+folio-test-*/
+documind-test-*/
+documind-benchmark-*/
+.browsers/
+test-results/
+playwright-report/
+.tools/
